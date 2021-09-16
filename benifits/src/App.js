@@ -1,11 +1,18 @@
-import './App.css';
+import React, { Component } from 'react'
+import Greet from './components/Greet'
+import GreetFunctional from './components/GreetFunctional'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-       <h1>Hello world</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <Greet/>
+        <GreetFunctional />
+
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
