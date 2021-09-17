@@ -1,10 +1,10 @@
-import React, { component } from "react";
+import React from "react";
 
-function GreetFunction () {
-    let name = "sateesh variable"
+function GreetFunction (props) {
+    
 return(
     <div>
-    <h1>this is {name} function components</h1>
+    <h1>this is {props.nameProp} function components</h1>
     </div>
   );
 }
