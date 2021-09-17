@@ -1,10 +1,9 @@
 import React from "react";
 
 
-function GreetFunctional (){
-    let name = 'bunny variable'
+function GreetFunctional (props){
     return(
-        <h1>Hello {name} i am functional component</h1>
+        <h1>Hello {props.nameProp} i am functional component</h1>
     )
 }
 
