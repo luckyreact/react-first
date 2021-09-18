@@ -1,21 +1,22 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PropsInClass from './components/Propsinclass';
+import PropsInFunctional from './components/Propsinfunction';
+import StateClass from './components/Stateinclass';
+import StateFunctional from './components/Stateinfunctional';
 
-
- import GreetClass from './components/GreetClass';
-
-import GreetFunction from './components/GreetFunction';
-
-function App() {
+ function App() {
   return (
-    <div className="App">
-  
-  <GreetClass/>
-
-  <GreetFunction/>
-
+    <div>
+       <center>
+          <PropsInClass nameprop="Lucky"/>
+          <PropsInFunctional nameprop="sony"/>
+           <StateClass name="Hony"/>
+          <StateFunctional nameprop="venky"/>
+          </center>
     </div>
-  );
+
+  )
 }
 
 export default App;
+
