@@ -5,7 +5,7 @@ class GreetClass extends Component {
         return(
 
           <div>
-           <h1>this is {this.props.nameprop} class components </h1>
+           <h1>this is {this.props.nameProp} class components </h1>
           </div>
     );
   };
