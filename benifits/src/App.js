@@ -11,6 +11,9 @@ import BindingEventHandler from './components/BindingEventHandler'
 import FuncInProps from './components/FuncInProps'
 import ConditionalRendering from './components/conditionalRendering'
 import ConditionalRenderingWithTernery from './components/ConditionalRenderingWithTernery'
+import ListRendering from './components/ListRendering'
+import DemoStyle from './components/DemoForStyles/DemoStyle'
+import DemoForStyles2 from './components/DemoForStyles2/DemoForStyles2'
 
 function App() {
     // var name = 'bunny';
@@ -34,7 +37,10 @@ function App() {
         {/* <BindingEventHandler /> */}
         {/* <FuncInProps name={name} buttonHandlerfunction = {buttonHandler}/> */}
         {/* <ConditionalRendering /> */}
-        <ConditionalRenderingWithTernery />
+        {/* <ConditionalRenderingWithTernery /> */}
+        {/* <ListRendering /> */}
+        {/* <DemoStyle /> */}
+        <DemoForStyles2 />
       </div>
     )
 }
