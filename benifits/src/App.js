@@ -1,5 +1,5 @@
-import './App.css';
-import jsx from './components/Jsx';
+//import './App.css';
+import Jsx from './components/Jsx';
 import BindingEventHandler from './components/BindingEventHandler';
 import BindingEventHandlerCheck from './components/BindingEventHandlerCheck';
 import ConditionalRendering from './components/ConditionalRendering';
@@ -10,6 +10,11 @@ import Greet from './components/greetClass';
 import GreetFunction from './components/greetFunction';
 import StateClass from './components/StateClass';
 import StateFunction from './components/StateFunction';
+import Sample1 from './components/sample1';
+import ListRendering from './components/ListRendering';
+import DemoForInputHandler from './components/DemoForInputHandler';
+
+
 
 
 
@@ -17,7 +22,7 @@ import StateFunction from './components/StateFunction';
 function App() {
   return (
     <div className="App">
-      <jsx />
+   {/*  <Jsx />
      <Greet nameProp="sateesh"/> 
      <GreetFunction nameProp="saragadam"/>
      <StateClass nameprop="sateesh"/>
@@ -27,7 +32,10 @@ function App() {
      <BindingEventHandler /> 
      <BindingEventHandlerCheck />
      <ConditionalRendering /> 
-     <ConditionalRenderingWithTernery />
+     <ConditionalRenderingWithTernery /> 
+     <Sample1 /> 
+     <ListRendering /> */}
+    <DemoForInputHandler />
      
     </div>
   );
