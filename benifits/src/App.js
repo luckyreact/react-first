@@ -14,6 +14,9 @@ import ConditionalRenderingWithTernery from './components/ConditionalRenderingWi
 import ListRendering from './components/ListRendering'
 import DemoStyle from './components/DemoForStyles/DemoStyle'
 import DemoForStyles2 from './components/DemoForStyles2/DemoForStyles2'
+import HandleInput from './components/HandleInput'
+import DemoForInputHandler from './components/DemoForInputHandler'
+import LifeCycleMethods from './components/LifeCycleMethods'
 
 function App() {
     // var name = 'bunny';
@@ -40,7 +43,10 @@ function App() {
         {/* <ConditionalRenderingWithTernery /> */}
         {/* <ListRendering /> */}
         {/* <DemoStyle /> */}
-        <DemoForStyles2 />
+        {/* <DemoForStyles2 /> */}
+        {/* <HandleInput /> */}
+        {/* <DemoForInputHandler /> */}
+        <LifeCycleMethods />
       </div>
     )
 }

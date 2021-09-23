@@ -8,6 +8,10 @@ class StateClassComponent extends Component {
     buttonHandler = () => {
      this.setState({place:'vizag'})
     }
+
+    componentWillUnmount = () => {
+        console.log("inside component will unMount")
+    }
     render() {
         return (
             <div>
