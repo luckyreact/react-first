@@ -14,10 +14,13 @@ class StateClassComponent extends Component {
     }
     render() {
         return (
-            <div>
+            <React.Fragment>
+            
               <h1>  My place name is {this.state.place}.</h1>
               <button onClick={this.buttonHandler}>submit</button>
-            </div>
+            </React.Fragment>
+            // <>
+            // </>
         )
     }
 }
