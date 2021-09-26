@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 import Jsx from './components/Jsx';
 import BindingEventHandler from './components/BindingEventHandler';
 import BindingEventHandlerCheck from './components/BindingEventHandlerCheck';
@@ -13,6 +13,8 @@ import StateFunction from './components/StateFunction';
 import Sample1 from './components/sample1';
 import ListRendering from './components/ListRendering';
 import DemoForInputHandler from './components/DemoForInputHandler';
+import LifeCycleMethodsInFunctional from './components/LifeCycleMethodsInFunctional';
+import FormHandling from './components/FormHandling';
 
 
 
@@ -34,8 +36,10 @@ function App() {
      <ConditionalRendering /> 
      <ConditionalRenderingWithTernery /> 
      <Sample1 /> 
-     <ListRendering /> */}
+     <ListRendering /> 
     <DemoForInputHandler />
+    <LifeCycleMethodsInFunctional />  */}
+    <FormHandling />  
      
     </div>
   );
