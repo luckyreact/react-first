@@ -19,6 +19,8 @@ import DemoForInputHandler from './components/DemoForInputHandler'
 import LifeCycleMethods from './components/LifeCycleMethods'
 import LifeCycleMethodsInFunctional from './components/LifeCycleMethodsInFunctional'
 import FormHandling from './components/formHandling'
+import SetInterval from './components/SetInterval'
+import Parent from './components/PureComponent/Parent'
 
 function App() {
     // var name = 'bunny';
@@ -34,7 +36,7 @@ function App() {
         {/* <GreetFunctional nameProp='bunny' /> */}
         {/* <GreetFunctional nameProp='sunny' />
         <GreetFunctional nameProp='tony' /> */}
-        <StateClassComponent />
+        {/* <StateClassComponent /> */}
         {/* <StateFunctionalComponents /> */}
         {/* <Jsx /> */}
         {/* <Destructing name="bunny" place="akp" age='25'/> */}
@@ -48,9 +50,11 @@ function App() {
         {/* <DemoForStyles2 /> */}
         {/* <HandleInput /> */}
         {/* <DemoForInputHandler /> */}
-        {/* <LifeCycleMethods /> */}
+        {/* <LifeCycleMethods />  */}
         {/* <LifeCycleMethodsInFunctional /> */}
         {/* <FormHandling /> */}
+        {/* <SetInterval /> */}
+        <Parent />
       </div>
     )
 }
