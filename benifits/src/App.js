@@ -21,6 +21,7 @@ import LifeCycleMethodsInFunctional from './components/LifeCycleMethodsInFunctio
 import FormHandling from './components/formHandling'
 import SetInterval from './components/SetInterval'
 import Parent from './components/PureComponent/Parent'
+import DemoApplication from './components/Demo3/DemoApplication'
 
 function App() {
     // var name = 'bunny';
@@ -54,7 +55,8 @@ function App() {
         {/* <LifeCycleMethodsInFunctional /> */}
         {/* <FormHandling /> */}
         {/* <SetInterval /> */}
-        <Parent />
+        {/* <Parent /> */}
+        <DemoApplication />
       </div>
     )
 }
