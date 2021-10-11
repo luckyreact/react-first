@@ -15,6 +15,7 @@ import ListRendering from './components/ListRendering';
 import DemoForInputHandler from './components/DemoForInputHandler';
 import LifeCycleMethodsInFunctional from './components/LifeCycleMethodsInFunctional';
 import FormHandling from './components/FormHandling';
+import DemoApplication from './components/DemoApplication';
 
 
 
@@ -37,9 +38,10 @@ function App() {
      <ConditionalRenderingWithTernery /> 
      <Sample1 /> 
      <ListRendering /> 
-    <DemoForInputHandler />
-    <LifeCycleMethodsInFunctional />  */}
-    <FormHandling />  
+    <DemoForInputHandler /> */}
+  {/*  <LifeCycleMethodsInFunctional />  */} 
+  {/*  <FormHandling />  */}
+  <DemoApplication/>
      
     </div>
   );
