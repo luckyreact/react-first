@@ -22,6 +22,8 @@ import FormHandling from './components/formHandling'
 import SetInterval from './components/SetInterval'
 import Parent from './components/PureComponent/Parent'
 import DemoApplication from './components/Demo3/DemoApplication'
+import Parent2 from './components/PureComponentInFunction/ParentInFunctional'
+import RefsInReact from './components/RefsInReact'
 
 function App() {
     // var name = 'bunny';
@@ -56,7 +58,9 @@ function App() {
         {/* <FormHandling /> */}
         {/* <SetInterval /> */}
         {/* <Parent /> */}
-        <DemoApplication />
+        {/* <DemoApplication /> */}
+        {/* <Parent2 /> */}
+          <RefsInReact />
       </div>
     )
 }
