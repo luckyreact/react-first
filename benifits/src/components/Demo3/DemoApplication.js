@@ -8,7 +8,8 @@ class DemoApplication extends Component {
         this.state = {
              userName:'',
              password:'',
-            value:false
+            value:false,
+            userNameError:''
         }
     }
     userNameHandler = (e) => {
@@ -24,18 +25,19 @@ class DemoApplication extends Component {
     }
     
     submitHandler = () => {
+        if(this.state.userName.length == 0){
+            this.setState({userNameError:"Please enter the username"})
+        }
         if(this.state.userName.length > 0 &&  this.state.password.length >0){
             alert('Login sucess')
-        } else {
-            alert("please enter all fields");
         }
     }
-
     
     render() {
         return (
             <div className="parent">
                 <input value={this.state.userName} onChange={this.userNameHandler} placeholder="Enter Username" className="username"/>
+                <p style={{color:'red'}}>{this.state.userNameError}</p>
                 <div>
                     <input value={this.state.password} type={this.state.value?'text':'password'} onChange={this.passwordHandler} placeholder="Enter Password" className="password"/>
                     <button onClick={this.HideHandler} className ='hide-button'>{this.state.value?'Hide':'Show'}</button>

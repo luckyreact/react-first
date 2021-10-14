@@ -24,6 +24,8 @@ import Parent from './components/PureComponent/Parent'
 import DemoApplication from './components/Demo3/DemoApplication'
 import Parent2 from './components/PureComponentInFunction/ParentInFunctional'
 import RefsInReact from './components/RefsInReact'
+import Component1 from './components/HigherOrderComponents.js/Component1'
+import Component2 from './components/HigherOrderComponents.js/Component2'
 
 function App() {
     // var name = 'bunny';
@@ -58,9 +60,11 @@ function App() {
         {/* <FormHandling /> */}
         {/* <SetInterval /> */}
         {/* <Parent /> */}
-        {/* <DemoApplication /> */}
+        <DemoApplication />
         {/* <Parent2 /> */}
-          <RefsInReact />
+          {/* <RefsInReact /> */}
+          {/* <Component1 />
+          <Component2 /> */}
       </div>
     )
 }
