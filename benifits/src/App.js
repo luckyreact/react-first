@@ -26,14 +26,14 @@ import Todolist1 from './components/component2/Todolistcopy';
     //       <StateFunctional nameprop="venky"/>
     //       </center> */}
           
-    //       {/* <Destructing name = "Prabha" place ="Mumbai" age ="33"/> */}
-    //       {/* <Sample/> */}
-    //       {/* <Sample1/> */}
-    //       {/* <Sample2/> */}
-    //       {/* <Opposite/> */}
-    //       {/* <ListRegarding/> */}
+        {/* <Destructing name = "Prabha" place ="Mumbai" age ="33"/> */}
+        {/* <Sample/> */}
+        {/* <Sample1/> */}
+        {/* <Sample2/> */}
+       {/* <Opposite/> */}
+      {/* <ListRegarding/> */}
              {/* <LifecycleMethodsInFunctional/>   */}
-    //      {/* <practice1/> */}
+      {/* <practice1/> */}
             {/* <DemoApplication/>   */}
            {/* <DemoApplication2/> */}
       {/* <Signup/> */}
