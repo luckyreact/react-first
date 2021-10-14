@@ -1,8 +1,8 @@
-import React, {useState}from 'react'
+import React, {useeffect,useState}from 'react'
 
 function StateFunctional() {
 
-    const [place,setplacename] = useState('Anakapalli')
+    const [place,setplacename] = useState('Munagapaka')
 
     const buttonHandler = () => {
         setplacename('Vizag');
