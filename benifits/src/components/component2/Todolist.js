@@ -39,18 +39,32 @@ import React, { Component } from 'react'
                     <div>
                         < input type="checkbox" />
                         <input Placeholder="Geteggs..."  />
+                    <button>Delete</button>
+                    <button>Edit</button>
+                    <li>
+              <input type="checkbox" checked={ this.props.isCompleted } onChange={ this.props.toggleComplete } />
+              <button onClick={() => this.props.deleteTodo(this.props.id)}>Edit</button>
+              <span>{ this.props.description }</span>
+            </li>
+          
                     </div>
                     <div>
                         <input type="checkbox" />
                         <input placeholder="Getmilk"/>
+                        <button>Delete</button>
+                        <button>Edit</button> 
                     </div>
                         <div>
                         <input type="checkbox" />
                         <input placeholder="study for exam"/>
+                        <button onClick>Delete</button>
+                        <button>Edit</button>
                         </div>
                         <div>
                         <input type="checkbox" />
                         <input placeholder="check twitter"/>
+                        <button>Delete</button>
+                        <button>Edit</button>
                         </div> 
             </div>
             </div>
