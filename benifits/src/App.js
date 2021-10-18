@@ -27,6 +27,7 @@ import RefsInReact from './components/RefsInReact'
 import Component1 from './components/HigherOrderComponents.js/Component1'
 import Component2 from './components/HigherOrderComponents.js/Component2'
 import Todolist from './components/TodoApplication/Todo'
+import Todo2 from './components/TodoApplication2/Todo2'
 
 function App() {
     // var name = 'bunny';
@@ -66,7 +67,7 @@ function App() {
           {/* <RefsInReact /> */}
           {/* <Component1 />
           <Component2 /> */}
-          <Todolist />
+          <Todo2 />
       </div>
     )
 }

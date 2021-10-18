@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
- class Todolist extends Component {
+ class Todo2 extends Component {
     constructor(props) {
         super(props)
     
@@ -22,53 +22,26 @@ import React, { Component } from 'react'
     }
 
     CheckHandler = (x) => {
-      const CheckedList =  this.state.todoList.map((y) => {
-            if(x.id === y.id){
-              return {
-                  ...y,
-                  checked:!x.checked
-              }
+        console.log(x);
+        const CheckedList = this.state.todoList.map((y)=>{
+            if(y.id === x.id){
+                return {
+                    ...y,
+                    checked:!x.checked
+                }
             }
-            return y
+            return y;
         })
+
+        console.log(CheckedList);
         this.setState({todoList:CheckedList});
     }
 
     deleteHandler = (x) => {
-        const CheckedList =  this.state.todoList.filter((y) => x.id != y.id)
-        this.setState({todoList:CheckedList});
-    }
-
-    editHandler = (x) => {
-        this.setState({editElement:x.title})
-        const CheckedList =  this.state.todoList.map((y) => {
-            if(x.id === y.id){
-              return {
-                  ...y,
-                  isEdit:!x.isEdit
-              }
-            }
-            return y
-        })
-        this.setState({todoList:CheckedList});
-    }
-
-    editInputHandler = (e) => {
-        this.setState({editElement:e.target.value});
-    }
-
-    saveHandler = (x) => {
-        const CheckedList =  this.state.todoList.map((y) => {
-            if(x.id === y.id){
-              return {
-                  ...y,
-                  isEdit:!x.isEdit,
-                  title:this.state.editElement
-              }
-            }
-            return y
-        })
-        this.setState({todoList:CheckedList});
+        // console.log(x);
+        const deletedItems = this.state.todoList.filter((todo)=>todo.id !== x.id);
+        // console.log(deletedItems);
+        this.setState({todoList:deletedItems});
     }
 
 
@@ -84,17 +57,11 @@ import React, { Component } from 'react'
                 <div style={{display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column',marginTop:"40px"}}>
                 {this.state.todoList.map((x)=>(
                       <div key={x?.id} style={{display:"flex",flexDirection:'row',alignItems:'center',justifyContent:'center'}}>
-                          < input type="checkbox"  onChange={()=>this.CheckHandler(x)}/>
-                          {x.checked ?
-                        <del>  <h3 style={{width:'200px'}}>{x?.title}</h3></del>:
-                         x.isEdit ? 
-                        <input style={{width:'200px'}} value={this.state.editElement} onChange={this.editInputHandler} />:
-                        <h3 style={{width:'200px',color:'white'}}>{x?.title}</h3>
-                    }
-                        {  x.isEdit ? 
-                          <button style={{backgroundColor:'blue',color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.saveHandler(x)}>Save</button> :
+                           < input type="checkbox"  onChange={()=>this.CheckHandler(x)}/>
+
+                            <h3 style={{width:'200px'}}>{x.checked?<del>{x?.title}</del>:x?.title}</h3>
+                   
                           <button style={{backgroundColor:'blue', color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.editHandler(x)}>Edit</button>  
-                        }  
                           <button style={{backgroundColor:'red', color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.deleteHandler(x)}>Delete</button>
 
                       </div>
@@ -110,4 +77,4 @@ import React, { Component } from 'react'
     }
 
 
-export default Todolist;
+export default Todo2;
