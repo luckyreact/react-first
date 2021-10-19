@@ -28,6 +28,7 @@ import Component1 from './components/HigherOrderComponents.js/Component1'
 import Component2 from './components/HigherOrderComponents.js/Component2'
 import Todolist from './components/TodoApplication/Todo'
 import Todo2 from './components/TodoApplication2/Todo2'
+import EditObject from './components/EditObject'
 
 function App() {
     // var name = 'bunny';
@@ -67,7 +68,8 @@ function App() {
           {/* <RefsInReact /> */}
           {/* <Component1 />
           <Component2 /> */}
-          <Todo2 />
+          {/* <Todo2 /> */}
+          <EditObject />
       </div>
     )
 }

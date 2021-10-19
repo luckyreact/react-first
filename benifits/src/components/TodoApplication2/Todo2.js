@@ -44,6 +44,41 @@ import React, { Component } from 'react'
         this.setState({todoList:deletedItems});
     }
 
+    editHandler = (x) => {
+        const editedItems = this.state.todoList.map((y)=>{
+            if(y.id === x.id){
+                return {
+                    ...y,
+                    isEdit:true
+                }
+            }
+            return y;
+        })
+      
+        this.setState({todoList:editedItems});
+        this.setState({editElement:x.title})
+
+    }
+
+    editInputHandler = (element) => {
+        this.setState({editElement:element.target.value})
+    }
+
+    saveHandler = (x) => {
+        const SaveItems = this.state.todoList.map((y)=>{
+            if(y.id === x.id){
+                return {
+                    ...y,
+                    isEdit:false,
+                    title:this.state.editElement
+                }
+            }
+            return y;
+        })
+        this.setState({todoList:SaveItems});
+
+    }
+
 
     render() {
         return (
@@ -51,17 +86,21 @@ import React, { Component } from 'react'
             <div >
             <h1 style={{color:'white',marginLeft:"120px"}}>Todo list</h1>
                 <div style={{display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'row'}}>
-                  <input  placeholder="Get some eggs..."  value={this.state.element} onChange={this.inputHandler} type="text" style={{margin:'10px',padding:'10px', borderRadius:'5px',width:'200px'}}/>
+                  <input  placeholder="Enter Todo..."  value={this.state.element} onChange={this.inputHandler} type="text" style={{margin:'10px',padding:'10px', borderRadius:'5px',width:'200px'}}/>
                   <button onClick={this.AddButtonHandler} style={{margin:'10px',padding:'10px', borderRadius:'5px',width:'100px',paddingLeft:'2px' ,backgroundColor:'purple', color:"white"}} >Add</button>
                 </div>
                 <div style={{display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column',marginTop:"40px"}}>
                 {this.state.todoList.map((x)=>(
                       <div key={x?.id} style={{display:"flex",flexDirection:'row',alignItems:'center',justifyContent:'center'}}>
                            < input type="checkbox"  onChange={()=>this.CheckHandler(x)}/>
-
+                            {x.isEdit? 
+                            <input value={this.state.editElement} onChange={this.editInputHandler}/> 
+                            :
                             <h3 style={{width:'200px'}}>{x.checked?<del>{x?.title}</del>:x?.title}</h3>
-                   
-                          <button style={{backgroundColor:'blue', color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.editHandler(x)}>Edit</button>  
+                            }
+                           {x.isEdit? 
+                          <button style={{backgroundColor:'blue', color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.saveHandler(x)}>Save</button> : 
+                          <button style={{backgroundColor:'blue', color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.editHandler(x)}>Edit</button>  }
                           <button style={{backgroundColor:'red', color:'white',margin:'10px',padding:'5px',borderRadius:'5px'}} onClick = {()=> this.deleteHandler(x)}>Delete</button>
 
                       </div>
