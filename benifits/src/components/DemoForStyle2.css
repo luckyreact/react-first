@@ -1,0 +1,13 @@
+.Parent {
+  width: 400px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: rgb(233, 240, 240);
+  box-shadow: 0 4px 8px rgba(0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 5px;
+}
