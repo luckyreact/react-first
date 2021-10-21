@@ -33,7 +33,7 @@ import './DemoApplications.css'
     render() {
         return (
             <div className="parent">
-                <input value={this.state.username} OnChange={this.userNameHandler} placeholder= "Enter username" className="username"/>
+                <input value={this.state.userName} OnChange={this.userNameHandler} placeholder= "Enter username" className="username"/>
                 <div>
                 <input value={this.state.password}  type={this.state.value?'text':'password'} onChange={this.passwordHandler} placeholder= "enter password" className="password"/>
                 <button onClick={this.HideHandler} className ='hide-button'>{this.state.value?'Hide':'Show'}</button>

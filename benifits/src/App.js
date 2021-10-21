@@ -16,6 +16,8 @@ import DemoForInputHandler from './components/DemoForInputHandler';
 import LifeCycleMethodsInFunctional from './components/LifeCycleMethodsInFunctional';
 import FormHandling from './components/FormHandling';
 import DemoApplication from './components/DemoApplication';
+import RefsInReact from './components/RefInReact';
+import Todo from './components/components2/Todo';
 
 
 
@@ -38,10 +40,12 @@ function App() {
      <ConditionalRenderingWithTernery /> 
      <Sample1 /> 
      <ListRendering /> 
-    <DemoForInputHandler /> */}
-  {/*  <LifeCycleMethodsInFunctional />  */} 
-  {/*  <FormHandling />  */}
-  <DemoApplication/>
+    <DemoForInputHandler /> 
+   <LifeCycleMethodsInFunctional />  
+   <FormHandling />  
+  <DemoApplication/> 
+  <RefsInReact />  */}
+  <Todo />
      
     </div>
   );
